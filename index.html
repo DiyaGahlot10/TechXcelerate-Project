@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <!-- Header -->
+    <div id="header">
+      <h1><span>🚀</span> Modern <span style="color: #00bcd4;">To-Do</span> List</h1>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div id="tabs">
+      <div id="todo-tab" class="tab active-tab">To-Do</div>
+      <div id="priorities-tab" class="tab">Priorities</div>
+      <div id="completed-tab" class="tab">Completed</div>
+    </div>
+
+    <!-- To-Do Section -->
+    <div id="todo-section">
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="Enter your task" required>
+        <select id="priority-select">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+        <input type="date" id="due-date" required>
+        <button type="submit">Add Task</button>
+      </form>
+      <ul id="task-list"></ul>
+    </div>
+
+    <!-- Priorities Section -->
+    <div id="priorities-section" style="display: none;">
+      <h3>High Priority</h3>
+      <ul id="high-priority-list"></ul>
+      <h3>Medium Priority</h3>
+      <ul id="medium-priority-list"></ul>
+      <h3>Low Priority</h3>
+      <ul id="low-priority-list"></ul>
+    </div>
+
+    <!-- Completed Section -->
+    <div id="completed-section" style="display: none;">
+      <h3>Completed Tasks</h3>
+      <ul id="completed-list"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
